@@ -6,13 +6,13 @@ public class Main {
         GenericItem FirstItem = new GenericItem(123,"iPhone XS",55000, Category.GENERAL);
         FirstItem.printAll();
 
-        GenericItem SecondItem = new GenericItem(123,"iPhone XS", 55000, Category.GENERAL);
+        GenericItem SecondItem = new GenericItem(132,"Snickers", 100, Category.FOOD);
         SecondItem.printAll();
 
         GenericItem ThirdItem = new GenericItem(321, "Off-White Hoodie", 50000, Category.DRESS);
         ThirdItem.printAll();
-        //ThirdItem.analog = SecondItem;
-        System.out.println("1" + ThirdItem.analog);
+        ThirdItem.analog = SecondItem;
+        System.out.println("Analog : " + ThirdItem.analog);
         System.out.println("END Of First Task");
 
         System.out.println("Second Task");
@@ -21,7 +21,7 @@ public class Main {
         TechnicalItem ItemTechniq2 = new TechnicalItem(222, "Xiaomi", 70000, Category.GENERAL, (short) 1);
 
         FoodItem ItemFood1 = new FoodItem(144, "Milk", 70, Category.FOOD, date, (short) 2);
-        FoodItem ItemFood2 = new FoodItem(144, "Milk", 70, Category.FOOD, date, (short) 2);
+        FoodItem ItemFood2 = new FoodItem(121, "Cheese", 150, Category.FOOD, date, (short) 10);
         GenericItem items[] = {ItemFood1, ItemTechniq1, ItemFood2, ItemTechniq2};
 
         for(GenericItem genericItem : items){
@@ -29,24 +29,24 @@ public class Main {
         }
         System.out.println("END Of Second Task");
 
-        System.out.println("1 = 2 - " + ItemFood1.equals(ItemFood2));
-        System.out.println("1 = 2 - " + ItemTechniq1.equals(ItemTechniq2));
-        System.out.println("1 = 2 - " + FirstItem.equals(SecondItem));
-        System.out.println("1 = 2 - " + ItemFood1.equals(ItemFood1));
+        System.out.println("Second.Part 2 Task");
 
-        System.out.println("____________");
+        FoodItem ItemFoodEqual_1 = new FoodItem(122, "Chocolate", 100, Category.FOOD, date, (short)5);
+        FoodItem ItemFoodEqual_2 = new FoodItem(122, "Chocolate", 100, Category.FOOD, date, (short)5);
+        System.out.println("First is equal to Second : " + ItemFoodEqual_1.equals(ItemFoodEqual_2));
+        FoodItem ItemFoodEqual_3 = new FoodItem(783, "Apple", 20, Category.FOOD, date, (short) 10);
+        System.out.println("First is equal to Third : " + ItemFoodEqual_1.equals(ItemFoodEqual_3));
 
-        GenericItem firstitemclone = FirstItem.clone();
-        System.out.println("1=2 - " + firstitemclone);
+        System.out.println("\n");
 
-        System.out.println("1=2 - " + FirstItem.equals(firstitemclone));
+        FoodItem ItemFood_1_clone = ItemFoodEqual_1.clone();
+        System.out.println("It is a clone of original : " + ItemFood_1_clone);
+        System.out.println("Original is equal to the clone : " + ItemFoodEqual_1.equals(ItemFood_1_clone));
 
-        TechnicalItem technicalItemclone = ItemTechniq1.clone();
-        System.out.println("1-2 - " + technicalItemclone);
-        System.out.println("1=2 - " + ItemTechniq1.equals(technicalItemclone));
+        System.out.println("\n");
 
         GenericItem seconditem_2 = SecondItem.clone();
         seconditem_2.analog = ThirdItem;
-        System.out.println("1=2 - " + seconditem_2.analog);
+        System.out.println("Clone Of Analog : " + seconditem_2.analog);
     }
 }

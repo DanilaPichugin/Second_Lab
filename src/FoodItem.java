@@ -18,7 +18,7 @@ public class FoodItem extends GenericItem {
 
     @Override
     public String toString() {
-        return this.name;
+        return this.name + "|" + ID + "|" + category + "|" + price + "|" + expires + "|" + dateOfIncome;
     }
 
     public boolean equals(FoodItem item){

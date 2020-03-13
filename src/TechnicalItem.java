@@ -8,11 +8,11 @@ public class TechnicalItem extends GenericItem {
 
     @Override
     void printAll(){
-        System.out.printf("ID: %-10d Name: %-10s Category: %-10s price:%-10.2f Warranty: %d\n", ID, name, category, price, warrantyTime);
+        System.out.printf("ID: %-10d Name: %-10s Category: %-10s price: %-10.2f Warranty: %d\n", ID, name, category, price, warrantyTime);
     }
     @Override
     public String toString(){
-        return this.name;
+        return this.name + "|" + ID + "|" + category + "|" + price + "|" + warrantyTime;
     }
 
     public boolean equals(TechnicalItem item){
