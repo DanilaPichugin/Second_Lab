@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.util.Objects;
 
 public class FoodItem extends GenericItem {
     Date dateOfIncome;
@@ -34,6 +35,12 @@ public class FoodItem extends GenericItem {
         }
         return false;
     }
+
+    @Override
+    public int hashcode(){
+        return Objects.hash(ID, name, price, category, dateOfIncome, expires);
+    }
+
     @Override
     public FoodItem clone() throws CloneNotSupportedException{
         return (FoodItem) super.clone();

@@ -1,4 +1,5 @@
-//import java.util.Objects;
+import java.util.Objects;
+
 public class GenericItem implements Cloneable{
     public int ID;
     public String name;
@@ -32,6 +33,9 @@ public class GenericItem implements Cloneable{
             return true;
         }
         return false;
+    }
+    public int hashcode(){
+        return Objects.hash(ID, name, price, category);
     }
 
     @Override
