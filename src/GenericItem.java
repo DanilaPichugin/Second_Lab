@@ -1,4 +1,4 @@
-//import java.util.Objects;
+import java.util.Objects;
 public class GenericItem implements Cloneable{
     public int ID;
     public String name;
@@ -21,6 +21,7 @@ public class GenericItem implements Cloneable{
         return this.name + "|" + ID + "|" + price + "|" + category;
     }
 
+
     public boolean equals(GenericItem item){
         if (this == item){
             return true;
@@ -34,12 +35,18 @@ public class GenericItem implements Cloneable{
         return false;
     }
 
+    public int hashcode(){
+        return Objects.hash(ID, name, price, category);
+    }
+
+
     @Override
-    public GenericItem clone() throws CloneNotSupportedException{
-        if(this.analog != null){
+    public GenericItem clone() throws CloneNotSupportedException {
+        if (this.analog != null) {
             return (GenericItem) this.analog.clone();
         }
         return (GenericItem) super.clone();
     }
+
 }
 

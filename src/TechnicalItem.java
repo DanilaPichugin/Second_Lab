@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class TechnicalItem extends GenericItem {
     short warrantyTime;
 
@@ -15,6 +17,7 @@ public class TechnicalItem extends GenericItem {
         return this.name + "|" + ID + "|" + category + "|" + price + "|" + warrantyTime;
     }
 
+
     public boolean equals(TechnicalItem item){
         if (this == item){
             return true;
@@ -27,6 +30,11 @@ public class TechnicalItem extends GenericItem {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public int hashcode(){
+        return Objects.hash(ID, name, price, category, warrantyTime);
     }
 
     @Override
