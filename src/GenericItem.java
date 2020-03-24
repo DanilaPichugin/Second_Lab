@@ -1,7 +1,7 @@
 import java.util.Objects;
 public class GenericItem implements Cloneable{
     public int ID;
-    public static int currentID = 0;
+    public static int currentID = 1;
     public String name;
     public float price;
     public Category category = Category.GENERAL;
@@ -21,13 +21,17 @@ public class GenericItem implements Cloneable{
     }
     GenericItem(String name, float price, GenericItem analog){
         this(name, price, Category.GENERAL);
-        ID = GenericItem.currentID++;
+        //в этом конструкторе не присваем ID, так как это перегруженный конструктор, который берет за основу поля из
+        //родительского конструктора, в котором по умолчанию ID увеличивается на 1
+        //ID = GenericItem.currentID++;
         this.analog = analog;
     }
 
     GenericItem(){
         this("Unnamed", 0f, Category.GENERAL);
-        ID = GenericItem.currentID++;
+        //в этом конструкторе не присваем ID, так как это перегруженный конструктор, который берет за основу поля из
+        //родительского конструктора, в котором по умолчанию ID увеличивается на 1
+        //ID = GenericItem.currentID++;
     }
 
     void printAll() {

@@ -9,6 +9,11 @@ public class ThirdExerciseMain {
         printStream.println("String massive : " + java.util.Arrays.toString(item_fld));
         //parseFloat и parseShort возвращает значение в заданных форматах, представленных строкой
         FoodItem foodItemArr = new FoodItem(item_fld[0], Float.parseFloat(item_fld[1]), Short.parseShort(item_fld[2]));
+        FoodItem foodItemArr_1 = new FoodItem(item_fld[0], Float.parseFloat(item_fld[1]), Short.parseShort(item_fld[2]));
+        FoodItem foodItemArr_2 = new FoodItem(item_fld[0], Float.parseFloat(item_fld[1]), Short.parseShort(item_fld[2]));
         foodItemArr.printAll();
+        foodItemArr_1.printAll();
+        foodItemArr_2.printAll();
+
     }
 }

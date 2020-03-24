@@ -1,4 +1,4 @@
-public class U0901WorkArray<T extends Number> {
+public class U0901WorkArray<T extends Number>{
     T[] arrNums;
 
     U0901WorkArray(T[] numP){
