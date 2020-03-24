@@ -1,7 +1,8 @@
 import java.util.Date;
+import java.lang.String;
 
 public class Main {
-    public static void main(String[] args) throws CloneNotSupportedException {
+    public static void main(String[] args) throws CloneNotSupportedException{
         System.out.println("First Task");
         GenericItem FirstItem = new GenericItem(123,"iPhone XS",55000, Category.GENERAL);
         FirstItem.printAll();
@@ -48,5 +49,7 @@ public class Main {
         GenericItem seconditem_2 = SecondItem.clone();
         seconditem_2.analog = ThirdItem;
         System.out.println("Clone Of Analog : " + seconditem_2.analog);
+        System.out.println("\n");
     }
+
 }

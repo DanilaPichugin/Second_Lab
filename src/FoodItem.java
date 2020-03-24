@@ -11,6 +11,22 @@ public class FoodItem extends GenericItem {
         this.expires = expires;
     }
 
+    FoodItem(String name, float price, FoodItem analog, Date date, short expires){
+        this.name = name;
+        this.price = price;
+        this.analog = analog;
+        this.dateOfIncome = date;
+        this.expires = expires;
+    }
+
+    FoodItem(String name, float price, short expires){
+        this(name, price, null, null, expires);
+    }
+
+    FoodItem(String name){
+        this(name, 0f, null, null, (short) 2);
+    }
+
     @Override
     void printAll(){
         System.out.printf("ID: %-10d Name: %-10s Category: %-10s price:%-10.2f Expires: %-10d Date Of Income:%s \n", ID,

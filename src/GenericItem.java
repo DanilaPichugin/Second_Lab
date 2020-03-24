@@ -1,6 +1,7 @@
 import java.util.Objects;
 public class GenericItem implements Cloneable{
     public int ID;
+    public static int currentID = 0;
     public String name;
     public float price;
     public Category category = Category.GENERAL;
@@ -11,6 +12,22 @@ public class GenericItem implements Cloneable{
         this.name = name;
         this.price = price;
         this.category = category;
+    }
+    GenericItem(String name, float price, Category category){
+        ID = GenericItem.currentID++;
+        this.name = name;
+        this.price = price;
+        this.category = category;
+    }
+    GenericItem(String name, float price, GenericItem analog){
+        this(name, price, Category.GENERAL);
+        ID = GenericItem.currentID++;
+        this.analog = analog;
+    }
+
+    GenericItem(){
+        this("Unnamed", 0f, Category.GENERAL);
+        ID = GenericItem.currentID++;
     }
 
     void printAll() {
