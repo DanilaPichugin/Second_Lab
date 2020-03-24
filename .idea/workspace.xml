@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d06966f6-f5ce-4fbd-afe9-484c10da3bc1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FoodItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/FoodItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FoodItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FoodItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GenericItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenericItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GenericItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenericItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="d06966f6-f5ce-4fbd-afe9-484c10da3bc1" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +23,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ThirdExerciseMain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
@@ -98,7 +90,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Category.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -176,7 +168,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585056053569" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585056138873" />
     <property name="last_opened_file_path" value="$USER_HOME$/Мои документы" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -208,7 +200,7 @@
       <workItem from="1583916227885" duration="40705000" />
       <workItem from="1584181695461" duration="2462000" />
       <workItem from="1584188762003" duration="708000" />
-      <workItem from="1584536768866" duration="16687000" />
+      <workItem from="1584536768866" duration="17018000" />
     </task>
     <task id="LOCAL-00001" summary="Second Commit">
       <created>1584537178679</created>
@@ -221,10 +213,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60562000" />
+    <option name="totallyTimeSpent" value="60893000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13825503" />
@@ -377,16 +369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ThirdExerciseMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -428,6 +410,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ThirdExerciseMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
